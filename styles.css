@@ -12,7 +12,7 @@ main {
 }
 
 .bg-1 {
-    background-image: url(images/bg-pattern-top-mobile.svg) ;
+    background-image: url(images/bg-pattern-top-mobile.svg);
     background-repeat: no-repeat;
     position: absolute;
     min-width: 374px;
@@ -22,7 +22,7 @@ main {
 }
 
 .bg-2 {
-    background-image: url(images/bg-pattern-bottom-mobile.svg) ;
+    background-image: url(images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
     position: absolute;
     min-width: 375px;
@@ -49,6 +49,7 @@ main {
     margin-top: 20px;
     margin-bottom: 30px;
     max-width: 290.2px;
+    font-weight: 400;
 }
 
 .ratings {
@@ -158,3 +159,102 @@ p {
     max-width: 241.2px;
 }
 
+@media only screen and (min-width:800px) {
+    main {
+        display: grid;
+        /* grid-gap: 1rem; */
+        grid-template-areas:
+            'heading ratings '
+            'review review ';
+    }
+
+    .heading {
+        position: relative;
+        text-align: left;
+        font-size: 3.4rem;
+        max-width: 425.2px;
+        left: 150px;
+        bottom: 20px;
+    }
+
+    .para {
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        max-width: 424px;
+    }
+
+    .rating-1 {
+        position: relative;
+        right: 450px;
+        top: -5px;
+        padding: 15px 50px;
+        min-width: 290.367px;
+
+    }
+
+    .rating-2 {
+        position: relative;
+        right: 406px;
+        top: -5px;
+        padding: 15px 32px;
+        min-width: 319.4px;
+    }
+
+    .rating-3 {
+        position: relative;
+        right: 450px;
+        top: -5px;
+        left: -340px;
+        padding: 15px 45px;
+    }
+
+    .rate {
+        display: flex;
+    }
+
+    .review {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 55px;
+        left: 150px;
+        right: 0px;
+        top: -130px;
+    }
+
+    .review-1 {
+        padding: 45px;
+
+    }
+
+    .review-2 {
+        position: relative;
+        top: 20px;
+    }
+
+    .review-3 {
+        position: relative;
+        margin-bottom: 6px;
+        top: 40px;
+    }
+
+    p {
+        min-width: 284.2px;
+    }
+
+    .bg-1 {}
+
+    .bg-2 {
+        bottom: 0px;
+        top: 336px;
+        right: 0px;
+        left: 1161px;
+        transform: rotate(720deg);
+        background-repeat: repeat-y;
+
+    }
+
+
+
+}
