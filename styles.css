@@ -159,7 +159,7 @@ p {
     max-width: 241.2px;
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:1000px) {
     main {
         display: grid;
         /* grid-gap: 1rem; */
